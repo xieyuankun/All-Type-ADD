@@ -83,9 +83,8 @@ pip install -r requirements.txt
 ```
 
 ### 3. SSL prepraring
-All of our SSL feature use the Hugging Face vervison. This requires you to download the corresponding SSL offline to your own directory. `--local-dir` corresponds to the SSL address in config.py.
+All SSL feature use the Hugging Face vervison. This requires you to download the corresponding SSL offline to your own directory. `--local-dir` corresponds to the SSL address in config.py.
 ```
-pip install -U huggingface_hub
 huggingface-cli download facebook/wav2vec2-xls-r-300m --local-dir yourpath/huggingface/wav2vec2-xls-r-300m/
 huggingface-cli download microsoft/wavlm-large --local-dir yourpath/huggingface/wavlm-large/
 huggingface-cli download m-a-p/MERT-v1-330M --local-dir yourpath/huggingface/MERT-300M/

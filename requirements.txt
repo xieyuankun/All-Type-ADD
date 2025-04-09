@@ -12,3 +12,4 @@ torchaudio==2.1.2
 torchvision==0.16.2
 tqdm==4.66.1
 transformers==4.36.2
+huggingface_hub
