@@ -21,7 +21,8 @@ Singing Voice - [CtrSVDD_train&dev](https://zenodo.org/records/10467648), [CtrSV
 
 Music - [FakeMusicCaps](https://zenodo.org/records/15063698)
 
-Upon downloading all datasets, please arrange them in accordance with the directory structure outlined below. If any path errors occur, please modify the 'Data folder prepare' section in config.py accordingly.
+Upon downloading all datasets, please arrange them in accordance with the directory structure outlined below. If any path errors occur, please modify the 'Data folder prepare' section in config.py accordingly. 
+
 
 ```
 # Project Directory Structure
@@ -75,13 +76,20 @@ Upon downloading all datasets, please arrange them in accordance with the direct
 │   │   │   ├── eval.txt (evaluation labels)
 ```
 
-
 ### 2. Environment Setup
 ```
 conda create -n add python==3.9.18
 pip install -r requirements.txt
 ```
 
+### 3. SSL prepraring
+All of our SSL feature use the Hugging Face vervison. This requires you to download the corresponding SSL offline to your own directory. `--local-dir` corresponds to the SSL address in config.py.
+```
+pip install -U huggingface_hub
+huggingface-cli download facebook/wav2vec2-xls-r-300m --local-dir yourpath/huggingface/wav2vec2-xls-r-300m/
+huggingface-cli download microsoft/wavlm-large --local-dir yourpath/huggingface/wavlm-large/
+huggingface-cli download m-a-p/MERT-v1-330M --local-dir yourpath/huggingface/MERT-300M/
+```
 
 ### 3. Training
 
