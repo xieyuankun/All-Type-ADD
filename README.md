@@ -77,9 +77,10 @@ Upon downloading all datasets, please arrange them in accordance with the direct
 
 
 ### 2. Environment Setup
-`conda create -n add python==3.9.18`
-
-`pip install -r requirements.txt`
+```
+conda create -n add python==3.9.18
+pip install -r requirements.txt
+```
 
 
 ### 3. Training
@@ -112,7 +113,9 @@ All inference scripts for this paper can be found in `script/test_ref.sh`
 
 Compute EER score. This will iterate through all the result.txt files in the ckpt folder and return the EER scores.
 
-`python evaluate_all.py -p ckpt_best/cotrain_wpt_xlsraasist `
+```
+python evaluate_all.py -p ckpt_best/cotrain_wpt_xlsraasist
+```
 
 
 ### 5. Interpretability
