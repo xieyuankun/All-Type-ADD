@@ -102,13 +102,13 @@ choices=['aasist', 'specresnet', 'fr-w2v2aasist','fr-wavlmaasist',  'fr-mertaasi
           'wpt-w2v2aasist', 'wpt-wavlmaasist', 'wpt-mertaasist' ⭐⭐⭐
 ]
 ```
-All training scripts for this paper can be found in `train_ref.sh`
+All training scripts for this paper can be found in `script/train_ref.sh`
 
 ### 4. Evaluation
 
-You can use the checkpoint provided on our Google Drive for inference, and refer to the script `test_best.sh`
+You can use the checkpoint provided on our Google Drive for inference, and refer to the script `script/test_best.sh`
 
-All inference scripts for this paper can be found in `test_ref.sh`
+All inference scripts for this paper can be found in `script/test_ref.sh`
 
 Compute EER score. This will iterate through all the result.txt files in the ckpt folder and return the EER scores.
 
@@ -117,7 +117,9 @@ Compute EER score. This will iterate through all the result.txt files in the ckp
 
 ### 5. Interpretability
 
-You can generate the attention map using `visual.sh.`
+You can generate the attention map using `script/visual.sh.`
+
+Also, you can generate the T-SNE figure using `script/T-SNE.sh.`
 
 ## 📝 Citation
 
