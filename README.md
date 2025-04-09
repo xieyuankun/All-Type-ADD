@@ -112,7 +112,7 @@ Compute EER score. This will iterate through all the result.txt files in the ckp
 `python evaluate_all.py -p ckpt_best/cotrain_wpt_xlsraasist `
 
 
-### 4. Interpretability
+### 5. Interpretability
 
 You can generate the attention map using `visual.sh.`
 
