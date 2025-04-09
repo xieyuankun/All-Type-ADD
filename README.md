@@ -90,7 +90,7 @@ huggingface-cli download microsoft/wavlm-large --local-dir yourpath/huggingface/
 huggingface-cli download m-a-p/MERT-v1-330M --local-dir yourpath/huggingface/MERT-300M/
 ```
 
-### 3. Training
+### 4. Training
 
 Example: Speech-trained WPT-XLSRAASIST  
 ```
@@ -112,7 +112,7 @@ choices=['aasist', 'specresnet', 'fr-w2v2aasist','fr-wavlmaasist',  'fr-mertaasi
 ```
 All training scripts for this paper can be found in `script/train_ref.sh`
 
-### 4. Evaluation
+### 5. Evaluation
 
 You can use the checkpoint provided on our Google Drive for inference, and refer to the script `script/test_best.sh`
 
@@ -125,7 +125,7 @@ python evaluate_all.py -p ckpt_best/cotrain_wpt_xlsraasist
 ```
 
 
-### 5. Interpretability
+### 6. Interpretability
 
 You can generate the attention map using `script/visual.sh.`
 

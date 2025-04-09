@@ -125,7 +125,6 @@ def train(args):
     if args.model == 'pt-w2v2aasist':   #⭐⭐⭐
         feat_model = PTW2V2AASIST(model_dir= args.xlsr, prompt_dim=args.prompt_dim, 
                                   num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()
-
     if args.model == "wpt-w2v2aasist":  #⭐⭐⭐⭐⭐
         feat_model = WPTW2V2AASIST(model_dir= args.xlsr, prompt_dim=args.prompt_dim,
                                    num_prompt_tokens = args.num_prompt_tokens, num_wavelet_tokens=args.num_wavelet_tokens, 
