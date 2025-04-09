@@ -167,36 +167,30 @@ if __name__ == "__main__":
         feat_model = WAVLMAASIST(model_dir= args.wavlm, freeze = False).cuda()
     if args.model == 'ft-mertaasist':   #🔥
         feat_model = MERTAASIST(model_dir= args.mert, freeze = False).cuda()
-    if args.model == 'pt-w2v2aasist':   #⭐⭐
+    if args.model == 'pt-w2v2aasist':   #⭐⭐⭐
         feat_model = PTW2V2AASIST(model_dir= args.xlsr, prompt_dim=args.prompt_dim, 
                                   num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()
-
-        
-    if args.model == "wpt-w2v2aasist":  #⭐⭐⭐
+    if args.model == "wpt-w2v2aasist":  #⭐⭐⭐⭐⭐
         feat_model = WPTW2V2AASIST(model_dir= args.xlsr, prompt_dim=args.prompt_dim,
                                    num_prompt_tokens = args.num_prompt_tokens, num_wavelet_tokens=args.num_wavelet_tokens, 
                                    dropout= args.pt_dropout).cuda()
 
 
-# ABLATION
-    if args.model == 'shpt-w2v2aasist':   
-        feat_model = PTW2V2AASIST_shallow(model_dir= args.xlsr, prompt_dim=args.prompt_dim, 
-                                  num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()        
-        
-    if args.model == 'pt-wavlmaasist':   
+# ABLATION      
+    if args.model == 'pt-wavlmaasist':  
         feat_model = PTWAVLMAASIST(model_dir= args.wavlm, prompt_dim=args.prompt_dim, 
                                   num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()
-    if args.model == "wpt-wavlmaasist":  
+    if args.model == "wpt-wavlmaasist": 
         feat_model = WPTWAVLMAASIST(model_dir= args.wavlm, prompt_dim=args.prompt_dim,
                                    num_prompt_tokens = args.num_prompt_tokens, num_wavelet_tokens=args.num_wavelet_tokens, 
                                    dropout= args.pt_dropout).cuda()        
-    if args.model == 'pt-mertaasist':   
+    if args.model == 'pt-mertaasist':  
         feat_model = PTMERTAASIST(model_dir= args.mert, prompt_dim=args.prompt_dim, 
                                   num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()
     if args.model == "wpt-mertaasist":  
         feat_model = WPTMERTAASIST(model_dir= args.mert, prompt_dim=args.prompt_dim,
                                    num_prompt_tokens = args.num_prompt_tokens, num_wavelet_tokens=args.num_wavelet_tokens, 
-                                   dropout= args.pt_dropout).cuda()      
+                                   dropout= args.pt_dropout).cuda()   
         
         
     feat_model.load_state_dict(checkpoint)

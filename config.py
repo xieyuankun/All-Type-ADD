@@ -62,9 +62,11 @@ def initParams():
     # countermeasure
     parser.add_argument("--audio_len", type=int, help="raw waveform length", default=64600)
     parser.add_argument('-m', '--model', help='Model arch', default='pt-w2v2aasist',
-                        choices=['aasist','fr-w2v2aasist','fr-wavlmaasist', 'fr-mertaasist', 
-                                 'specresnet','ft-w2v2aasist','ft-wavlmaasist', 'ft-mertaasist', 'pt-w2v2aasist', 'wpt-w2v2aasist', 
-                                 'shpt-w2v2aasist','pt-wavlmaasist', 'wpt-wavlmaasist', 'pt-mertaasist', 'wpt-mertaasist'])
+                        choices=['aasist', 'specresnet', 'fr-w2v2aasist','fr-wavlmaasist', 'fr-mertaasist', 
+                                 'ft-w2v2aasist','ft-wavlmaasist', 'ft-mertaasist', 
+                                 'pt-w2v2aasist', 'wpt-w2v2aasist', 
+                                 'pt-wavlmaasist', 'wpt-wavlmaasist', 
+                                 'pt-mertaasist', 'wpt-mertaasist'])
     
     # pt
     parser.add_argument("--prompt_dim", type=int, help="prompt dim", default=1024)

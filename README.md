@@ -85,7 +85,9 @@ Upon downloading all datasets, please arrange them in accordance with the direct
 ### 3. Training
 
 Example: Speech-trained WPT-XLSRAASIST  
-`python main_train.py --gpu 0 --train_task speech --model wpt-w2v2aasist --batch_size 32 --num_prompt_tokens 6 --num_wavelet_tokens 4 --o ./ckpt_pt/speech_wpt-w2v2aasist ` 
+```
+python main_train.py --gpu 0 --train_task speech --model wpt-w2v2aasist --batch_size 32 --o ./ckpt_pt/speech_wpt-w2v2aasist 
+```
 
 To change the training data, please refer to main_train.py `--train_task`, 
 
@@ -93,12 +95,13 @@ choices=["speech", "sound", "singing", "music", "cotrain"]
 
 To change the CM, please refer to config.py `--model`, 
 
-choices=['aasist', 'specresnet', 'fr-w2v2aasist','fr-wavlmaasist', 'fr-mertaasist', 
-          'ft-w2v2aasist','ft-wavlmaasist', 'ft-mertaasist', 
-          'pt-w2v2aasist', 'wpt-w2v2aasist', 
-          'pt-wavlmaasist', 'wpt-wavlmaasist', 
-          'pt-mertaasist', 'wpt-mertaasist']
-
+```
+choices=['aasist', 'specresnet', 'fr-w2v2aasist','fr-wavlmaasist',  'fr-mertaasist',  ❄
+          'ft-w2v2aasist','ft-wavlmaasist', 'ft-mertaasist',  🔥
+          'pt-w2v2aasist', 'pt-wavlmaasist', 'pt-mertaasist', ⭐
+          'wpt-w2v2aasist', 'wpt-wavlmaasist', 'wpt-mertaasist' ⭐⭐⭐
+]
+```
 All training scripts for this paper can be found in `train_ref.sh`
 
 ### 4. Evaluation
