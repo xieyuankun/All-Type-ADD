@@ -1,6 +1,6 @@
 # Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for Enhanced Auditory Perception
 <p align="center">
-  <img width="380" height="320" src="figure/problem.pdf">
+  <img width="480" height="320" src="figure/problem.pdf">
 </p>
 
 ## ⭐I will finish the repository within a few weeks.
