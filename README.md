@@ -1,6 +1,6 @@
 # Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for Enhanced Auditory Perception
 <p align="center">
-  <img width="480" height="320" src="figure/problem.pdf">
+  <img width="480" height="320" src="figure/problem">
 </p>
 
 ## ⭐I will finish the repository within a few weeks.
@@ -132,12 +132,12 @@ python evaluate_all.py -p ckpt_best/cotrain_wpt_xlsraasist
 
 You can generate the attention map using `script/visual.sh.`
 <p align="center">
-  <img src="figure/attention.pdf">
+  <img src="figure/attention">
 </p>
 
 Also, you can generate the T-SNE figure using `script/T-SNE.sh.`
 <p align="center">
-  <img src="figure/TSNE.pdf">
+  <img src="figure/TSNE">
 </p>
 ## 📝 Citation
 
