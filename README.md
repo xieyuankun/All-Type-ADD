@@ -3,8 +3,6 @@
   <img src="figure/problem.png" style="width: 80%; height: auto;">
 </p>
 
-## ⭐I will finish the repository within a few weeks.
-
 This is the repo of our work titled “Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for
 Enhanced Auditory Perception”, which was available on arxiv at "https://arxiv.org/pdf/2504.06753".
 
