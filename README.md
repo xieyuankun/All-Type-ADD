@@ -142,5 +142,12 @@ Also, you can generate the T-SNE figure using `script/T-SNE.sh.`
 ## 📝 Citation
 
 If you find this repository is useful to your research, please cite it as follows:
-
+```
+@article{xie2025detect,
+  title={Detect All-Type Deepfake Audio: Wavelet Prompt Tuning for Enhanced Auditory Perception},
+  author={Xie, Yuankun and Fu, Ruibo and Wang, Zhiyong and Wang, Xiaopeng and Cao, Songjun and Ma, Long and Cheng, Haonan and Ye, Long},
+  journal={arXiv preprint arXiv:2504.06753},
+  year={2025}
+}
+```
 
