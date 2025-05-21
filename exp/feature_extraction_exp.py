@@ -105,6 +105,7 @@ class WPT_XLSR(torch.nn.Module):
                 prompt = self.prompt_embedding[i].expand(B, -1, -1).to(self.device)
                 prompt = self.prompt_dropout(prompt)  # Apply dropout to prompt
                 fprompt = self.fprompt_embedding[i].expand(B, -1, -1).to(self.device)
+                fprompt = self.prompt_dropout(self.wavelet_block(fprompt))
                 hidden_state = torch.cat((fprompt, prompt, hidden_state[:, self.num_prompt_tokens + fprompt.shape[1]:, :]), dim=1)
                 if self.visual: 
                     hidden_state, attention_weight = self.model.encoder.layers[i](hidden_state, output_attentions=self.visual)

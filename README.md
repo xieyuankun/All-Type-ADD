@@ -7,9 +7,6 @@ This is the repo of our work titled “Detect All-Type Deepfake Audio: Wavelet P
 Enhanced Auditory Perception”, which was available on arxiv at "https://arxiv.org/pdf/2504.06753".
 
 
-We provided speech-trained WPT-XLSR-AASIST and final co-trained WPT-XLSR-AASIST pre-trained model, you can download from [google drive](https://drive.google.com/drive/folders/1h3w1anPb0k2GIuSfDG5JOvBNZmXLWhPn?usp=drive_link) and put them in `./ckpt_best`.
-
-
 ### 1. Data prepraring
 
 This project requires downloading four datasets independently.
