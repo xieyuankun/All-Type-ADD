@@ -112,8 +112,6 @@ All training scripts for this paper can be found in `script/train_ref.sh`
 
 ### 5. Evaluation
 
-You can use the checkpoint provided on our Google Drive for inference, and refer to the script `script/test_best.sh`
-
 All inference scripts for this paper can be found in `script/test_ref.sh`
 
 Compute EER score. This will iterate through all the result.txt files in the ckpt folder and return the EER scores.
