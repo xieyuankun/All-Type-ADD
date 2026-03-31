@@ -129,9 +129,6 @@ def train(args):
         feat_model = WPTW2V2AASIST(model_dir= args.xlsr, prompt_dim=args.prompt_dim,
                                    num_prompt_tokens = args.num_prompt_tokens, num_wavelet_tokens=args.num_wavelet_tokens, 
                                    dropout= args.pt_dropout).cuda()
-
-
-# ABLATION      
     if args.model == 'pt-wavlmaasist':  
         feat_model = PTWAVLMAASIST(model_dir= args.wavlm, prompt_dim=args.prompt_dim, 
                                   num_prompt_tokens = args.num_prompt_tokens, dropout= args.pt_dropout).cuda()
